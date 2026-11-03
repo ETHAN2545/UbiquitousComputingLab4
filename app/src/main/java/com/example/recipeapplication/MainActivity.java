@@ -1,24 +1,50 @@
 package com.example.recipeapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.FrameLayout;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements RecipesFragment.OnRecipeSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
+
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        if (savedInstanceState == null) {
+
+            RecipesFragment recipesFragment = new RecipesFragment();
+
+            getSupportFragmentManager().beginTransaction().replace(R.id.recipe_container, recipesFragment).commit();
+        }
+    }
+
+    @Override
+    public void onRecipeSelected(String recipeName) {
+
+        FrameLayout detailContainer = findViewById(R.id.detail_container);
+
+        if (detailContainer != null) {
+
+            // Landscape mode
+
+            IngredientsFragment detailFragment = IngredientsFragment.newInstance(recipeName);
+
+            getSupportFragmentManager().beginTransaction().replace(R.id.detail_container, detailFragment).addToBackStack(null).commit();
+
+        } else {
+
+            // Portrait mode
+
+            Intent intent = new Intent(MainActivity.this, IngredientsActivity.class);
+
+            intent.putExtra("recipeName", recipeName);
+
+            startActivity(intent);
+        }
     }
 }
