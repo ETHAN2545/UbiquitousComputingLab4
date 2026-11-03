@@ -1,0 +1,66 @@
+
+[
+  {
+    "name": "Spaghetti Bolognese",
+    "ingredients": [
+      "200g spaghetti",
+      "250g minced beef",
+      "1 onion",
+      "2 cloves garlic",
+      "400g chopped tomatoes",
+      "1 tablespoon olive oil",
+      "Salt and pepper"
+    ],
+    "method": "1. Cook the spaghetti in boiling water until tender.\n2. Heat olive oil in a pan and cook the chopped onion and garlic.\n3. Add the minced beef and cook until browned.\n4. Add the chopped tomatoes and simmer for 15 minutes.\n5. Season with salt and pepper.\n6. Serve the sauce over the cooked spaghetti."
+  },
+  {
+    "name": "Chicken Curry",
+    "ingredients": [
+      "250g chicken breast",
+      "1 onion",
+      "2 cloves garlic",
+      "2 tablespoons curry powder",
+      "200ml coconut milk",
+      "1 tablespoon olive oil",
+      "Salt and pepper"
+    ],
+    "method": "1. Cut the chicken into small pieces.\n2. Heat olive oil in a pan.\n3. Add the chopped onion and garlic.\n4. Add the chicken and cook until browned.\n5. Add the curry powder and coconut milk.\n6. Simmer for 20 minutes until the chicken is fully cooked.\n7. Season and serve."
+  },
+  {
+    "name": "Beef Burger",
+    "ingredients": [
+      "250g minced beef",
+      "2 burger buns",
+      "2 slices cheddar cheese",
+      "1 tomato",
+      "Lettuce",
+      "1 onion",
+      "Salt and pepper"
+    ],
+    "method": "1. Season the minced beef with salt and pepper.\n2. Shape the beef into burger patties.\n3. Cook the patties in a frying pan until fully cooked.\n4. Add the cheddar cheese on top.\n5. Toast the burger buns.\n6. Add lettuce, tomato and onion.\n7. Assemble the burger and serve."
+  },
+  {
+    "name": "Margherita Pizza",
+    "ingredients": [
+      "1 pizza base",
+      "100g tomato sauce",
+      "150g mozzarella cheese",
+      "Fresh basil leaves",
+      "1 tablespoon olive oil"
+    ],
+    "method": "1. Preheat the oven to 220 degrees Celsius.\n2. Spread the tomato sauce over the pizza base.\n3. Add the mozzarella cheese.\n4. Drizzle with olive oil.\n5. Bake for 10 to 15 minutes until the cheese melts and the base is golden.\n6. Add fresh basil leaves and serve."
+  },
+  {
+    "name": "Chicken Alfredo",
+    "ingredients": [
+      "200g fettuccine pasta",
+      "250g chicken breast",
+      "150ml cooking cream",
+      "50g parmesan cheese",
+      "2 cloves garlic",
+      "1 tablespoon butter",
+      "Salt and pepper"
+    ],
+    "method": "1. Cook the fettuccine in boiling water until tender.\n2. Cut the chicken into small pieces.\n3. Melt the butter in a frying pan.\n4. Add the garlic and chicken and cook until the chicken is fully cooked.\n5. Add the cooking cream and parmesan cheese.\n6. Stir until the sauce thickens.\n7. Add the cooked pasta and mix together.\n8. Season and serve."
+  }
+]
